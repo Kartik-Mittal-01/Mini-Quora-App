@@ -1,0 +1,116 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    color: #ff5722; /* Highlighting color for main heading */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Container for Posts */
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between posts */
+    padding: 20px;
+    justify-items: center;
+    grid-auto-rows: minmax(200px, auto); /* Rows adjust based on content height */
+}
+
+/* Post Container Styling */
+.post {
+    background-color: #1e1e1e; /* Slightly lighter dark background for the post container */
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Full width of the column */
+    max-width: 600px;
+    position: relative; /* Needed for positioning links */
+    box-shadow: 0 0 15px rgba(255, 87, 34, 0.8); /* Highlighting color with soft glow */
+    border: 1px solid #333;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+}
+
+/* Positioning and Styling for Links */
+.post a {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #4caf50; /* Default link color */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.post a.edit-link {
+    color: #ffeb3b; /* Color for Edit link */
+}
+
+.post a.detail-link {
+    color: #03a9f4; /* Color for See In Detail link */
+}
+
+/* Aligning Links in the Top Right Corner */
+.post-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-links a {
+    margin-bottom: 5px; /* Space between links */
+}
+
+/* Button Styling */
+button {
+    background-color: #f44336; /* Red background for Delete button */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+/* Ensure Button is at Bottom Left */
+.post-form {
+    margin-top: auto; /* Push the form to the bottom of the post */
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+/* Link Styling for Create New Post */
+a[href="/posts/new"] {
+    color: #ff5722; /* Color for Create New Post link */
+    text-decoration: underline;
+    font-size: 16px;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .posts-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}

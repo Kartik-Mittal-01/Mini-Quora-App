@@ -1,0 +1,45 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Heading Styles */
+h2 {
+    color: #ff5722; /* Highlighting color for main heading */
+    margin-top: 20px;
+}
+
+/* Post Container Styling */
+.post {
+    background-color: #1e1e1e; /* Slightly lighter dark background for the post container */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(255, 87, 34, 0.8); /* Highlighting color with soft glow */
+    border: 1px solid #333;
+    text-align: left;
+}
+
+/* UserName Styling */
+.user {
+    color: #ff5722; /* Highlighting color for user name */
+}
+
+/* Content Styling */
+h4 {
+    color: #e0e0e0; /* Light color for post content */
+    margin: 10px 0;
+}
+
+/* Additional Styling */
+p {
+    color: #cccccc; /* Slightly muted color for additional text */
+    margin: 10px 0;
+}
